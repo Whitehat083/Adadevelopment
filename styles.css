@@ -2,11 +2,16 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  font-family: system-ui, sans-serif;
+  font-family: "aileron", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   color: black;
-  background-color: white;
 }
 
 nav {
@@ -30,27 +35,16 @@ nav a {
   font-size: small;
   transition: 0.5s ease-in;
 }
+
 nav a:hover {
   background-color: white;
   color: black;
   border-radius: 8px;
 }
 
-nav a[aria-current='page'] {
-  color: #000;
-  background-color: #d4d4d4;
-}
-
-
 h1 {
   font-weight: bold;
   font-size: 1.5rem;
-}
-
-.initial {
-  background-color: #000;
-  width: 1080px;
-  height: 1920px;
 }
 
 .ulnone,
@@ -66,8 +60,30 @@ li {
 }
 
 .start {
-  background: local;
-  background-image: url('initial.jpg');
-  height:  700px;
-  border: none;
+  background-image: url(initial.png);
+  height: 800px;
+  overflow: hidden;
+}
+
+.title {
+  color: white;
+  font-size: 100px;
+  position: relative;
+  left: 100px;
+  font-weight: bold;
+  line-height: 0px;
+  top: 200px;
+}
+
+.sub {
+  color: #aaa;
+  position: relative;
+  left: 105px;
+  top: 170px;
+  font-size: 20px;
+}
+
+.perfi {
+  background-color: black;
+  height: 800px;
 }
