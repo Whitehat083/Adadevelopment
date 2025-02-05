@@ -1,89 +1,294 @@
-* {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  font-family: "aileron", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: black;
-}
-
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding: 0.5rem;
-  gap: 0.5rem;
-  border-bottom: solid 1px #aaa;
-  background-color: black;
-}
-
-nav a {
-  display: inline-block;
-  min-width: 9rem;
-  padding: 0.5rem;
-  text-align: center;
-  text-decoration: none;
-  color: white;
-  font-size: small;
-  transition: 0.5s ease-in;
-}
-
-nav a:hover {
-  background-color: white;
-  color: black;
-  border-radius: 8px;
-}
-
-h1 {
-  font-weight: bold;
-  font-size: 1.5rem;
-}
-
-.ulnone,
-li {
-  list-style-type: none;
-  display: inline;
-}
-
-.logo {
-  width: 80px;
-  height: 80px;
-  margin-top: 8.25px;
-}
-
-.start {
-  background-image: url(initial.png);
-  height: 800px;
-  overflow: hidden;
-}
-
-.title {
-  color: white;
-  font-size: 100px;
-  position: relative;
-  left: 100px;
-  font-weight: bold;
-  line-height: 0px;
-  top: 200px;
-}
-
-.sub {
-  color: #aaa;
-  position: relative;
-  left: 105px;
-  top: 170px;
-  font-size: 20px;
-}
-
-.perfi {
-  background-color: black;
-  height: 800px;
-}
+        * {
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            margin: 0;
+            font-family: "aileron", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color: black;
+        }
+        
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            padding: 0.5rem;
+            gap: 0.5rem;
+            border-bottom: solid 1px #aaa;
+            background-color: black;
+        }
+        
+        nav a {
+            display: inline-block;
+            min-width: 9rem;
+            padding: 0.5rem;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            font-size: small;
+            transition: 0.5s ease-in;
+        }
+        
+        nav a:hover {
+            background-color: white;
+            color: black;
+            border-radius: 8px;
+        }
+        
+        h1 {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        
+        .ulnone,
+        li {
+            list-style-type: none;
+            display: inline;
+        }
+        
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin-top: 8.25px;
+        }
+        
+        .start {
+            background-image: url(initial.png);
+            height: 800px;
+            overflow: hidden;
+        }
+        
+        .title {
+            color: white;
+            font-size: 100px;
+            position: relative;
+            left: 100px;
+            font-weight: bold;
+            line-height: 0px;
+            top: 200px;
+            transition: ease-in 2s;
+        }
+        
+        .title:hover,
+        .sub:hover {
+            color: rgb(56, 135, 255);
+        }
+        
+        .sub {
+            color: #aaa;
+            position: relative;
+            left: 105px;
+            top: 170px;
+            font-size: 20px;
+            transition: ease-in 2s;
+        }
+        
+        .perfi {
+            background-image: url(flowing.jpg);
+            height: 900px;
+            overflow: hidden;
+            background-size: 1550px;
+            background-repeat: no-repeat;
+        }
+        
+        .space {
+            background-color: gray;
+            height: 1px;
+        }
+        
+        .title2 {
+            color: white;
+            position: relative;
+            left: 820px;
+            top: 100px;
+            font-size: 70px;
+            z-index: 3;
+            transition: ease-in 1s;
+        }
+        
+        .title2:hover,
+        .parag:hover {
+            color: rgb(89, 142, 255);
+        }
+        
+        .parag {
+            color: white;
+            position: relative;
+            left: 820px;
+            top: 80px;
+            font-size: 20px;
+            z-index: 2;
+            transition: ease-in 1s;
+        }
+        
+        .blur1 {
+            background-image: url(flowing.jpg);
+            position: relative;
+            width: 575px;
+            height: 400px;
+            opacity: 80%;
+            left: 850px;
+            z-index: 1;
+            top: -320px;
+            left: 810px;
+            border-radius: 6px;
+            filter: blur(7px);
+            transition: ease-in 1s;
+        }
+        
+        .blur1:hover {
+            background-color: white;
+        }
+        
+        .work {
+            background-image: url(initial.jpg);
+            background-size: 1470px;
+            height: 900px;
+            overflow: hidden;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        
+        .work::before {
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            pointer-events: none;
+            transition: top 0.05s, left 0.05s;
+            z-index: 0;
+        }
+        
+        .jobs {
+            color: white;
+            font-weight: 700;
+            font-size: 70px;
+            position: relative;
+            top: 100px;
+            z-index: 1;
+            text-align: center;
+            transition: ease-in 0.3s;
+            border: 2px white;
+        }
+        
+        .jobs:hover {
+            color: lightblue;
+            filter: opacity(80%);
+        }
+        
+        .jobs::before {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            top: calc(var(--y, 50%) - 180px);
+            left: calc(var(--x, 50%) - 20px);
+            border-radius: 50px;
+            pointer-events: none;
+            transition: top 0.05s, left 0.05s;
+            z-index: 2;
+            filter: blur(10px);
+            opacity: 80%;
+            backdrop-filter: blur(10px);
+        }
+        
+        .jl,
+        .jns,
+        .jr {
+            font-size: 30px;
+        }
+        
+        .jl,
+        .jlb {
+            left: 60px;
+            top: 60px;
+        }
+        
+        .jns,
+        .jnsb {
+            text-align: center;
+            top: -30px;
+            z-index: 2;
+            color: white;
+            position: relative;
+            transition: ease-out 2s;
+        }
+        
+        .jns:hover,
+        .jnsb:hover {
+            color: lightskyblue;
+        }
+        
+        .jl,
+        .jlb {
+            top: 30px;
+        }
+        
+        .jr,
+        .jrb {
+            text-align: right;
+            left: -60px;
+            top: -141px;
+        }
+        
+        .jnsb,
+        .jrb,
+        .jlb {
+            font-size: 15px;
+        }
+        
+        .jlb,
+        .jrb,
+        .jl,
+        .jr {
+            position: relative;
+            color: white;
+            transition: ease-in-out 1s;
+        }
+        
+        .jlb:hover,
+        .jrb:hover,
+        .jl:hover,
+        .jr:hover {
+            color: lightblue;
+        }
+        
+        .blue2 {
+            background-color: aliceblue;
+            width: 400px;
+            height: 150px;
+            position: relative;
+            left: 520px;
+            z-index: 1;
+            top: -175px;
+            border-radius: 300px;
+            filter: blur(4px);
+            transition: linear 2s;
+            opacity: 20%;
+        }
+        
+        .blue2:hover {
+            filter: blur(0px);
+            box-shadow: #3b5b64 2px 2px 10px;
+        }
+        
+        .custo {
+            height: 800px;
+            background-color: white;
+            overflow: hidden;
+        }
+        
+        .tcus {
+            font-size: 80px;
+        }
+        
+        .pcus {}
