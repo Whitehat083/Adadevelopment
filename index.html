@@ -1,82 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>Ada Development</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
     <link rel="stylesheet" href="styles.css" />
-
     <link rel="stylesheet" href="https://use.typekit.net/txm0wmh.css">
 </head>
-
 <body>
-    <nav>
-        <img class="logo" src="ADA.png" alt="">
+    <nav aria-label="Main navigation">
+        <img class="logo" src="ADA.png" alt="Ada Development logo">
         <ul class="ulnone">
             <li><a href="#home">Home</a></li>
             <li><a href="#perf">Nosso perfil</a></li>
             <li><a href="#work">Nossos Trabalhos</a></li>
-            <li><a href="#custo">Nossos clientes</a></li>
+            <li><a href="#custo">Orçamento</a></li>
             <li><a href="#cont">Contato</a></li>
+        </ul>
     </nav>
-    </ul>
-
     <main>
         <section id="home" class="start">
-            <p class="title">ADA</p>
-            <p class="title">DEVELOPMENT</p>
-            <p class="sub">Qualidade. Excelência em design. Diferenciação.</p>
-
-        </section>
-
-        <section class="space">
-
+            <div class="hero-overlay">
+                <p class="title">ADA</p>
+                <p class="title">DEVELOPMENT</p>
+                <p class="sub">Qualidade. Excelência em design. Diferenciação.</p>
+            </div>
         </section>
         <section id="perf" class="perfi">
-
-
             <h1 class="title2">Perfil da <br> empresa</h1>
             <p class="parag">
-
-                Fundada em 2025, a ADA Development é uma empresa de <br> design e desenvolvimento de sites, oferecendo soluções únicas <br> e diferenciadas para engenheiros, dentistas,<br> médicos, lojas e pequenas empresas. <br> Nosso foco está na união
-                <br> entre funcionalidade e beleza,
-                <br> entregando projetos de alta qualidade que <br> se destacam no mercado.
+                Fundada em 2025, a ADA Development é uma empresa de design e desenvolvimento de sites. Oferecemos soluções únicas e diferenciadas para engenheiros, dentistas, médicos, lojas e pequenas empresas. Nosso foco está na união entre funcionalidade, beleza e inovação, entregando projetos de alta qualidade que se destacam no mercado.
             </p>
-            <div class="blur1"></div>
-
-
         </section>
-
-        <section class="space"></section>
-
         <section class="work" id="work">
             <p class="jobs">Nossos <br> Serviços:</p>
-            <p class="jl"> Design de site <br> personalizado</p>
-            <p class="jlb">Criamos sites visualmente impressionantes <br> e exclusivos, adaptados às <br> necessidades de nossos clientes</p>
-            <p class="jr">Marca integrada </p>
-            <p class="jrb">Alinhamos a construção do <br> site de acordo com a <br> identidade de nosso cliente</p>
-
-            <p class="jns">Manutenção </p>
-            <p class="jnsb">Oferecemos suporte contínuo para manter os <br> produtos sempre atualizados, seguros e <br> adaptados de acordo com o mercado.</p>
-            <div class="blue2"> </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <p class="jl">Design de site <br> personalizado</p>
+                    <p class="jlb">Criamos sites visualmente impressionantes e exclusivos, adaptados às necessidades de nossos clientes</p>
+                </div>
+                <div class="service-card">
+                    <p class="jr">Marca integrada</p>
+                    <p class="jrb">Alinhamos a construção do site de acordo com a identidade de nosso cliente</p>
+                </div>
+                <div class="service-card">
+                    <p class="jns">Manutenção</p>
+                    <p class="jnsb">Oferecemos suporte contínuo para manter os produtos sempre atualizados, seguros e adaptados de acordo com o mercado</p>
+                </div>
+            </div>
         </section>
-        <section class="space"></section>
-
-        <section class="custo" id="custo">
-            <p class="tcus">Nossos Clientes e colaboradores:</p>
-            
-            
-            <p class="pcus"></p>
-
+        <section class="contact" id="custo">
+            <p class="tcus">Faça seu orçamento</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/adadevelopment?igsh=OGs0MDRhb2hicGZt" target="_blank"><img src="insta.png" class="in" alt="Instagram"></a>
+                <a href="https://wa.me/5519994656845?text=Quero%20um%20or%C3%A7amento%20" target="_blank"><img class="za" src="zap.png" alt="WhatsApp"></a>
+            </div>
         </section>
-
+        <section id="cont" class="contact">
+            <h2 class="contact-title">Entre em Contato</h2>
+            <p class="contact-text">Email: contato@adadevelopment.com | Telefone: +55 19 99465-6845</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Seu nome" required>
+                <input type="email" placeholder="Seu email" required>
+                <textarea placeholder="Sua mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
     <script src="script.js"></script>
 </body>
-
 </html>
